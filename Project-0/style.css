@@ -1,0 +1,40 @@
+body {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: purple;
+}
+
+.Shakespeare-photo {
+  height: 300px;
+}
+
+.me {
+  border: 2px solid purple;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.Shakespeare {
+  border: 2px solid aqua;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+button {
+  background: pink;
+  border-radius: 30px;
+  padding: 10px;
+  width: 300px;
+}
+
+.buttoncontainer {
+  display: flex;
+}
+
+button:hover {
+  background: deeppink;
+}
