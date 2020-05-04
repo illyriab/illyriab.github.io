@@ -20,8 +20,8 @@
   margin: 0px 5px;
 }
 
-.image:active {
-
+.image:hover {
+ display: block;
 }
 
 .BigImage {
