@@ -1,0 +1,48 @@
+.body {
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border: 2px solid lightgrey;
+  border-radius: 3px;
+  margin: 0px 5px;
+}
+
+.image:active {
+
+}
+
+.BigImage {
+  height: 200px;
+  width: 400px;
+  background: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.activeImage {
+  height: 200px;
+}
+
+.leftArrow {
+  position: absolute;
+}
+
+.rightArrow {
+  transform: rotate(180deg);
+  position: absolute;
+}
