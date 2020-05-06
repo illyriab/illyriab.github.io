@@ -35,6 +35,25 @@ $('#slovinsko').attr('src', slovinsko.photo);
 
 let gallery = [chicago, ceska_kanada, positive_creativity, slovensko, slovinsko];
 
-let currentPhoto = 1;
+let currentPhoto = 0;
+//$('#photo').attr('src', gallery[currentPhoto].photo);
 
-$('#photo').attr('src', gallery[currentPhoto].photo);
+let loadPhoto = (photoNumber) => {
+  $('#photo').attr('src', gallery[photoNumber].photo);
+}
+
+loadPhoto(currentPhoto);
+
+$('#rightArrow').click(() => {
+  if (currentPhoto < (gallery.length - 1)) {
+  currentPhoto++;
+  loadPhoto(currentPhoto);
+  }
+})
+
+$('#leftArrow').click(() => {
+  if (currentPhoto > 0) {
+  currentPhoto--;
+  loadPhoto(currentPhoto);
+  }
+})
